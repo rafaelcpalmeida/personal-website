@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: http://stackoverflow.com/users/story/3431018
 
-url: https://koppl.in/indigo
+url: http://rafaelalmeida.pt
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
