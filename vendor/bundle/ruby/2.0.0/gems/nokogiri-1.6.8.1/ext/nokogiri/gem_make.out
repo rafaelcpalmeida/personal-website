@@ -1,0 +1,98 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.1.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.4.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.4.tar.gz into tmp/x86_64-apple-darwin16/ports/libxml2/2.9.4... OK
+Running 'configure' for libxml2 2.9.4... OK
+Running 'compile' for libxml2 2.9.4... ERROR, review '/Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.8.1/ext/nokogiri/tmp/x86_64-apple-darwin16/ports/libxml2/2.9.4/compile.log' to see what happened. Last lines are:
+========================================================================
+    unsigned short* in = (unsigned short*) inb;
+                         ^~~~~~~~~~~~~~~~~~~~~
+encoding.c:815:27: warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* out = (unsigned short*) outb;
+                          ^~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+  CC       error.lo
+  CC       parserInternals.lo
+  CC       parser.lo
+  CC       tree.lo
+  CC       hash.lo
+  CC       list.lo
+  CC       xmlIO.lo
+xmlIO.c:1450:52: error: use of undeclared identifier 'LZMA_OK'
+    ret =  (__libxml2_xzclose((xzFile) context) == LZMA_OK ) ? 0 : -1;
+                                                   ^
+1 error generated.
+make[2]: *** [xmlIO.lo] Error 1
+make[1]: *** [all-recursive] Error 1
+make: *** [all] Error 2
+========================================================================
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+	--help
+	--clean
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--enable-cross-build
+	--disable-cross-build
+/Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:366:in `block in execute': Failed to complete compile task (RuntimeError)
+	from /Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:337:in `chdir'
+	from /Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:337:in `execute'
+	from /Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:111:in `compile'
+	from /Users/rafaelalmeida/projects/rafael-almeida/vendor/bundle/ruby/2.0.0/gems/mini_portile2-2.1.0/lib/mini_portile2/mini_portile.rb:150:in `cook'
+	from extconf.rb:365:in `block (2 levels) in process_recipe'
+	from extconf.rb:258:in `block in chdir_for_build'
+	from extconf.rb:257:in `chdir'
+	from extconf.rb:257:in `chdir_for_build'
+	from extconf.rb:364:in `block in process_recipe'
+	from extconf.rb:263:in `tap'
+	from extconf.rb:263:in `process_recipe'
+	from extconf.rb:556:in `<main>'

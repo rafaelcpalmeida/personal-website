@@ -1,0 +1,49 @@
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in include
+Making all in libxml
+make[3]: Nothing to be done for `all'.
+make[3]: Nothing to be done for `all-am'.
+Making all in .
+  CC       SAX.lo
+  CC       entities.lo
+  CC       encoding.lo
+encoding.c:491:26: warning: cast from 'const unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* in = (unsigned short*) inb;
+                         ^~~~~~~~~~~~~~~~~~~~~
+encoding.c:573:27: warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* out = (unsigned short*) outb;
+                          ^~~~~~~~~~~~~~~~~~~~~~
+encoding.c:729:26: warning: cast from 'const unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* in = (unsigned short*) inb;
+                         ^~~~~~~~~~~~~~~~~~~~~
+encoding.c:815:27: warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* out = (unsigned short*) outb;
+                          ^~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+encoding.c:491:26: warning: cast from 'const unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* in = (unsigned short*) inb;
+                         ^~~~~~~~~~~~~~~~~~~~~
+encoding.c:573:27: warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* out = (unsigned short*) outb;
+                          ^~~~~~~~~~~~~~~~~~~~~~
+encoding.c:729:26: warning: cast from 'const unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* in = (unsigned short*) inb;
+                         ^~~~~~~~~~~~~~~~~~~~~
+encoding.c:815:27: warning: cast from 'unsigned char *' to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+    unsigned short* out = (unsigned short*) outb;
+                          ^~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+  CC       error.lo
+  CC       parserInternals.lo
+  CC       parser.lo
+  CC       tree.lo
+  CC       hash.lo
+  CC       list.lo
+  CC       xmlIO.lo
+xmlIO.c:1450:52: error: use of undeclared identifier 'LZMA_OK'
+    ret =  (__libxml2_xzclose((xzFile) context) == LZMA_OK ) ? 0 : -1;
+                                                   ^
+1 error generated.
+make[2]: *** [xmlIO.lo] Error 1
+make[1]: *** [all-recursive] Error 1
+make: *** [all] Error 2

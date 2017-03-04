@@ -1,0 +1,63 @@
+# main text of home
+name: Rafael Almeida
+bio: '"I have no special talent. I am only passionately curious."'
+
+# twitter summary info
+description: Web Developer
+
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
+
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: true
+resume-external: true
+resume-url: http://stackoverflow.com/users/story/3431018
+
+url: https://koppl.in/indigo
+# your url: http://USERNAME.github.io
+
+permalink: /:title/
+
+# To enable google analytics, supply your token below
+analytics-google: '28397640-6'
+
+# if you don't have any of social below, comment the line
+facebook: rafaelcpalmeida
+twitter: rafaelcpalmeida
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+linkedin: rafaelcpalmeida
+# youtube: myyoutube
+# spotify: myspotify
+github: rafaelcpalmeida
+stackoverflow: 3431018/rafaelcpalmeida
+# quora: userquora
+# reddit: username
+medium: rafaelcpalmeida
+# vimeo: myvimeo
+email: rafael@rafaelalmeida.pt
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: large
+
+# if you don't need projects, comment the *projects* configs below
+projects: false
+
+# if you don't need "about" or "blog", comment them out below
+about: true
+
+# do you want some animations?
+animation: true
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
