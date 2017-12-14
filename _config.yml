@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: http://stackoverflow.com/story/rafaelcpalmeida
 
-url: http://rafaelalmeida.pt
+url: https://rafaelalmeida.pt
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -60,4 +60,8 @@ gems:
   - jekyll-gist
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
