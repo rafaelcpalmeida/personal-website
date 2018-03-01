@@ -3,7 +3,7 @@ name: Rafael Almeida
 bio: '"I have no special talent. I am only passionately curious."'
 
 # twitter summary info
-description: Passionate about programming and with a very keen interest in security and cryptography.
+description: Web Developer based in Porto, Portugal 🇵🇹.
 
 # if it's an external image, update below for true
 # better with square images
@@ -55,7 +55,7 @@ about: true
 # do you want some animations?
 animation: true
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-gist
 
