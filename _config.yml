@@ -22,10 +22,10 @@ url: https://rafaelalmeida.pt
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: '28397640-6'
+#analytics-google: '28397640-6'
 
 # if you don't have any of social below, comment the line
-facebook: rafaelcpalmeida
+#facebook: rafaelcpalmeida
 twitter: rafaelcpalmeida
 # google: mygoogle
 # instagram: myinstagram
